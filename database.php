@@ -28,6 +28,8 @@ require_once('lib/config.php');
 require_once('adodb/adodb-exceptions.inc.php');
 require_once('adodb/adodb.inc.php');
 
+$connect_string = "mysql://" . DB_USER . ":" . DB_PASSWD . "@" . DB_HOST . "/" . DB_NAME;
+
 try {
 	$adodb =& NewADOConnection($connect_string);
 } catch (Exception $e) {
