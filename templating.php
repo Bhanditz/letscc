@@ -23,7 +23,7 @@ define('SMARTY_DIR', '/usr/share/php/smarty3/');
 require_once('lib/config.php');
 require_once(SMARTY_DIR . 'Smarty.class.php');
 
-$theme = SMARTY_THEME;
+$default_theme = SMARTY_THEME;
 
 function displayError($error_title, $error_message) {
 	global $smarty;
