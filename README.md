@@ -1,28 +1,30 @@
 # About Let's CC
--------------------------------------------------------------------------------
-"Let's CC" is a search engine service that helps finding contents such as
-images, music, videos, and documents distributed
-under CCL (Creative Commons License) quickly, and easily. It was planned and
-developed by CC Korea volunteers in 2011. It utilizes many global service api
-such as Flickr, Youtube, CC Mixter, Jamendo, and SlideShare.
 
-This project is to encourage many people to share their knowledge, art, and
-data effectively, and experts of various areas to cooperate and collaborate
-to create innovative contents continuously.
+"Let's CC" is a search engine service that helps finding contents such
+as images, music, videos, and documents distributed under CCL
+(Creative Commons License) quickly, and easily. It was planned and
+developed by CC Korea volunteers in 2011.
+
+Additional development by Matt Lee at Creative Commons in 2014.
+
+It utilizes many global service api such as Flickr, YouTube, CCMixter,
+Jamendo, and SlideShare.
+
+This project is to encourage many people to share their knowledge,
+art, and data effectively, and experts of various areas to cooperate
+and collaborate to create innovative contents continuously.
 
 homepage: http://www.cckorea.org/xe/?mid=english
 
+## Requirements
 
-# Requirements
--------------------------------------------------------------------------------
-  MySQL : 5.1.0 or more
-  PHP : 5.3.0 or more, ext-curl, ext-json required
+* MySQL: 5.1.0 or more
+* PHP: 5.3.0 or more, ext-curl, ext-json required
 
-
-# How to install
--------------------------------------------------------------------------------
+## How to install
 
 1. Create database and user for MySQL.
+
 	$ mysql -u root -p
 	mysql> CREATE DATABASE [databasename];
 	mysql> GRANT ALL PRIVILEGES ON [databasename].* TO
@@ -35,20 +37,26 @@ homepage: http://www.cckorea.org/xe/?mid=english
     [password] : Password for user account
 
 2. Create table
+
 	$ mysql -u [username] -p [databasename] < [download path]/doc/schema.sql
 
 3. Create Facebook app here
-	You can create Facebook app here : https://developers.facebook.com/apps
 
-4. Create Twitter app here
-	You can create Twitter app here : https://dev.twitter.com/apps/new
+* You can create Facebook app here : https://developers.facebook.com/apps
 
-5. Create Slideshare API here
-	You can create Twitter app here : http://www.slideshare.net/developers
+4. Create Twitter app
 
-6. config.php setting
-	Modify [download path]/library/config.sample.php.
-	Rename "config.sample.php" to "config.php".
+* You can create Twitter app here : https://dev.twitter.com/apps/new
+
+5. Create SlideShare API
+
+* You can create SlideShare app here : http://www.slideshare.net/developers
+
+6. Update/modify config.php
+
+* Copy "lib/config.sample.php" to "config.php".
+
+* Rename "config.sample.php" to "config.php".
 
 	- Set a key for 'cookie' encryption.
 	define('COOKIE_SECRET_KEY','');
