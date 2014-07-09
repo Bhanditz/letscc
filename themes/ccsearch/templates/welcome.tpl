@@ -1,1 +1,2 @@
-<h1>Welcome!</h1>
+{include file='header.tpl'}
+{include file='footer.tpl'}

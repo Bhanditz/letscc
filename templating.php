@@ -28,6 +28,7 @@ $install_path = INSTALL_PATH;
 $base_url = BASE_URL;
 $site_name = SITE_NAME;
 $ccsearch_key = CCSEARCH_KEY;
+$static_url = STATIC_URL;
 
 function displayError($error_title, $error_message) {
 	global $smarty;
