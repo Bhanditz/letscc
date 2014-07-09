@@ -31,4 +31,4 @@ require_once('templating.php');
 $smarty->assign('headerfile', 'welcome-header.tpl');
 $smarty->assign('welcome', true);
 $smarty->display('welcome.tpl');
-}
+
