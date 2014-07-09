@@ -24,6 +24,10 @@ require_once('lib/config.php');
 require_once(SMARTY_DIR . 'Smarty.class.php');
 
 $default_theme = SMARTY_THEME;
+$install_path = INSTALL_PATH;
+$base_url = BASE_URL;
+$site_name = SITE_NAME;
+$ccsearch_key = CCSEARCH_KEY;
 
 function displayError($error_title, $error_message) {
 	global $smarty;
