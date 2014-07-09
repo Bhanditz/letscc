@@ -1,5 +1,5 @@
 {include file='header.tpl'}
-
+<script type="text/javascript" src="{$static_url}/j/header.js"></script>
 
 </head>
 <body class="<?=$body_class?>">

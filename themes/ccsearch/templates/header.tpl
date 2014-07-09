@@ -16,4 +16,4 @@
 <script type="text/javascript" src="{$static_url}/j/common.js"></script>
 <script type="text/javascript" src="{$static_url}/j/jquery.validate.js"></script>
 
-<script type="text/javascript" src="{$static_url}/j/header.js"></script>
+
