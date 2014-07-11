@@ -1,4 +1,4 @@
 <form action="{$base_url}/search.php" method="get">
-  <input type="text" name="q" id="q" />
+  <input type="text" name="k" id="k" />
   <input type="submit" />
 </form>
